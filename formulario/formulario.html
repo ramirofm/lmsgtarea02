@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>formulario</title>
+</head>
+
+<body>
+    <h1>RESERVA DE BILLETE </h1>
+    <form action="contacto.html" method="get">
+        <fieldset>
+            <legend>DATOS DE VIAJE</legend>
+            <label for="name">nombre</label>
+            <input id="name" type="text" name="nombre" placeholder="ingrese su nombre" required>
+            <br>
+            <label for="surname">apellido</label>
+            <input id="surname" type="text" name="apellido" placeholder="ingrese su apellido" required>
+            <br>
+            <label for="email">mail</label>
+            <input id="email" type="email" name="email" placeholder="ingrese su mail" required>
+            <br>
+            <label for="password">password</label>
+            <input id="password" type="password" name="pasword" placeholder="ingrese su password" required>
+        </fieldset>
+        <br><br>
+
+        <Fieldset>
+            <legend>DATOS DE VUELO</legend>
+            <label for="primera_clase">primera clase</label>
+            <input id="primmera_clase" type="radio" value="primera_clase" name="billete">
+            <br>
+            <label for="clase_preferente">clase preferente</label>
+            <input id="clase_preferente" type="radio" value="clase_preferente" name="billete">
+            <br>
+            <label for="clase_turista">clase turista</label>
+            <input id="clase_turista" type="radio" value="clase_turista" name="billete">
+        </Fieldset>
+        <br><br>
+
+        <FIeldset>
+            <Legend>EXTRAS</LEgend>
+            <label for="manta">manta</label>
+            <input id="manta" type="checkbox" value="manta" name="extra">
+            <br>
+            <label for="comida">comida</label>
+            <input id="comida" type="checkbox" value="comida" name="extra">
+            <br>
+            <label for="pelicula">pelicula</label>
+            <input id="pelicula" type="checkbox" value="pelicula" name="extra">
+            <br>
+            <label for="cascos">cascos</label>
+            <input id="cascos" type="checkbox" value="cascos" name="extra">
+        </FIeldset>
+        <br><br>
+        <fieldset>
+            <legend>SELECCION DE ASIENTO</legend>
+            <label for="asiento">asiento</label>
+            <select name="asiento" id="asiento">
+                <option disable selected>seleccione una opcion...</option>
+                <option value="ventanilla">ventanilla</option>
+                <option value="enmedio">enmedio</option>
+                <option value="pasillo">pasillo</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>OBSERVACIONES</legend>
+            <label for="observaciones">observaciones</label>
+            <textarea name="observaciones" id="observaciones" cols="40" rows="4"></textarea>
+            </select>
+        </fieldset>
+
+
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="restablecer">
+
+
+
+
+    </form>
+
+</body>
+
+</html>
